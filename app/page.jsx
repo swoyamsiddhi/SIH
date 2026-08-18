@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import {
   Activity, Search, BarChart3, ArrowRight, Play, Pause,
@@ -15,6 +15,21 @@ export default function Home() {
   const [isMuted, setIsMuted] = useState(true)
   const [activeScreen, setActiveScreen] = useState('dashboard') // 'dashboard' | 'dna' | 'test'
   const videoRef = useRef(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.muted = true
+      const playPromise = videoRef.current.play()
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => setIsPlaying(true))
+          .catch(() => {
+            // Autoplay policy prevented playback, keep muted and ready
+            setIsPlaying(false)
+          })
+      }
+    }
+  }, [])
 
   const togglePlay = () => {
     if (!videoRef.current) return
@@ -73,13 +88,15 @@ export default function Home() {
       <div className="fixed inset-0 z-0 h-full w-full overflow-hidden pointer-events-none">
         <video
           ref={videoRef}
-          src="/video.mp4"
           autoPlay
           loop
           muted
           playsInline
+          preload="auto"
           className="h-full w-full object-cover scale-105 transition-transform duration-1000"
-        />
+        >
+          <source src="/video.mp4" type="video/mp4" />
+        </video>
         {/* Cinematic Vignette & Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/45 to-black/90" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.7)_100%)]" />
