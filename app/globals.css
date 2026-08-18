@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f1efec;
+  color: #1a1a1a;
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ── Layout shells ─────────────────── */
+.phone {
+  max-width: 430px;
+  margin: auto;
+  min-height: 100vh;
+  background: #f1efec;
+}
+
+/* ── Card ──────────────────────────── */
+.card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 14px 36px rgba(27, 40, 54, .07);
+}
+
+/* ── Pill button ───────────────────── */
+.pill {
+  border-radius: 9999px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pill:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0,0,0,.10);
+}
+.pill:active {
+  transform: translateY(0);
+}
+
+/* ── Bottom-safe padding ───────────── */
+.nav-safe { padding-bottom: 100px; }
+
+/* ── Grid bg for camera area ───────── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(79,163,209,.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79,163,209,.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* ── Arc gauge ─────────────────────── */
+.arc-gauge {
+  position: relative;
+  width: 88px;
+  height: 88px;
+}
+.arc-gauge svg {
+  transform: rotate(-135deg);
+}
+.arc-gauge-track {
+  fill: none;
+  stroke: #E5E5E8;
+  stroke-width: 8;
+}
+.arc-gauge-progress {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s ease;
+}
+
+/* ── ECG Waveform animation ────────── */
+@keyframes wavePulse {
+  0% { stroke-dashoffset: 600; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.waveform-path {
+  stroke-dasharray: 600;
+  animation: wavePulse 3s linear infinite;
+}
+
+/* ── Glassmorphism effects ─────────── */
+.glass-nav {
+  background: rgba(15, 18, 24, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ── Map dot pulse ─────────────────── */
+@keyframes mapPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.4; }
+}
+.map-pulse {
+  animation: mapPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

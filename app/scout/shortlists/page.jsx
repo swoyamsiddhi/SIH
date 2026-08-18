@@ -1,0 +1,49 @@
+import { Desk, FadeIn } from '../../../src/components/ui'
+import { scoutShortlists, scoutAthletes } from '../../../src/data/mockData'
+import Link from 'next/link'
+
+export default function Shortlists() {
+  return (
+    <Desk title="Shortlists" subtitle="Organized athlete groups for evaluation">
+      <section className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {scoutShortlists.map((list, i) => (
+          <FadeIn key={list.name} delay={i * 0.08}>
+            <div className="card overflow-hidden">
+              {/* Header */}
+              <div className={`p-5 ${['bg-blue-pale', 'bg-green/25', 'bg-amber-pale'][i]}`}>
+                <p className="text-xs font-bold text-muted">{list.ageGroup}</p>
+                <h3 className="mt-1 text-lg font-extrabold">{list.name}</h3>
+                <p className="mt-2 text-3xl font-extrabold">{list.count}</p>
+                <p className="text-xs text-muted">athletes</p>
+              </div>
+              {/* Preview athletes */}
+              <div className="divide-y divide-track px-5">
+                {scoutAthletes
+                  .filter(x => list.sport === 'Mixed' || x.sport === list.sport)
+                  .slice(0, 3)
+                  .map(x => (
+                    <Link
+                      href={`/scout/athlete/${x.id}`}
+                      className="flex items-center justify-between py-3 transition-colors hover:bg-page-cool/50"
+                      key={x.id}
+                    >
+                      <div>
+                        <p className="text-sm font-bold">{x.id}</p>
+                        <p className="text-[10px] text-muted">{x.sport} · {x.location}</p>
+                      </div>
+                      <span className="text-sm font-bold">{x.potential}%</span>
+                    </Link>
+                  ))}
+              </div>
+              <div className="p-4">
+                <Link href="/scout/discover" className="text-xs font-bold text-blue">
+                  View all →
+                </Link>
+              </div>
+            </div>
+          </FadeIn>
+        ))}
+      </section>
+    </Desk>
+  )
+}
