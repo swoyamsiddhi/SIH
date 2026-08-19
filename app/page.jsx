@@ -266,7 +266,7 @@ export default function Home() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-[10px] font-bold tracking-[.18em] text-muted">KHEL-NET</p>
-                        <h2 className="text-lg font-extrabold">Good morning, Swoyam</h2>
+                        <h2 className="text-lg font-extrabold">Good morning, Neeraj</h2>
                       </div>
                       <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-soft">
                         <Bell size={16} />

@@ -6,7 +6,7 @@
 /* ── Primary athlete (logged-in user) ────────────────── */
 export const athlete = {
   id: 'ATH-28473',
-  name: 'Swoyam Siddhi',
+  name: 'Neeraj',
   age: 17,
   location: 'Chennai, Tamil Nadu',
   school: 'DAV Boys Senior Secondary School',

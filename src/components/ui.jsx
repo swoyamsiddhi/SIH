@@ -62,7 +62,7 @@ export function Header({ title, back = false }) {
           ) : (
             <>
               <p className="text-xs text-muted">Good morning,</p>
-              <h1 className="text-xl font-extrabold">Swoyam</h1>
+              <h1 className="text-xl font-extrabold">Neeraj</h1>
             </>
           )}
         </div>
