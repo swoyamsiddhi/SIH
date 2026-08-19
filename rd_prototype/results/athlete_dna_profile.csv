@@ -1,0 +1,8 @@
+dimension,raw_value,normalized_value,z_score,centile,confidence,source,population,sample_size,mean,std_dev
+Explosive Power,52.0,72.01655364002943,0.5833333333333334,72.01655364002943,92.0,Eurofit Prototype,European Youth (15-18M),1000,45.0,12.0
+Speed,2.9,69.14624612740133,0.5000000000000004,69.14624612740133,95.0,Sprint 20m Benchmark Prototype,European Youth (15-18M),800,3.1,0.4
+Agility,17.5,68.30306580593272,0.47619047619047616,68.30306580593272,88.0,Illinois Agility Prototype,European Youth (15-18M),800,18.5,2.1
+Reaction,230.0,69.1462461274013,0.5,69.1462461274013,90.0,Reaction Time Prototype,European Youth (15-18M),500,250.0,40.0
+Balance,35.0,73.40144709512995,0.625,73.40144709512995,85.0,Stork Stand Prototype,European Youth (15-18M),500,30.0,8.0
+Endurance,40.0,74.75074624530771,0.6666666666666666,74.75074624530771,98.0,Pushup Prototype,European Youth (15-18M),1000,30.0,15.0
+Movement Quality,18.0,84.13447460685428,1.0,84.13447460685428,90.0,FMS Prototype,European Youth (15-18M),600,15.0,3.0

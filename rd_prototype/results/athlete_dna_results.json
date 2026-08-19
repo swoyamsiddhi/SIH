@@ -1,0 +1,102 @@
+{
+    "dna_profile": [
+        {
+            "dimension": "Explosive Power",
+            "raw_value": 52.0,
+            "normalized_value": 72.01655364002943,
+            "z_score": 0.5833333333333334,
+            "centile": 72.01655364002943,
+            "confidence": 92.0,
+            "source": "Eurofit Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 1000,
+            "mean": 45.0,
+            "std_dev": 12.0
+        },
+        {
+            "dimension": "Speed",
+            "raw_value": 2.9,
+            "normalized_value": 69.14624612740133,
+            "z_score": 0.5000000000000004,
+            "centile": 69.14624612740133,
+            "confidence": 95.0,
+            "source": "Sprint 20m Benchmark Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 800,
+            "mean": 3.1,
+            "std_dev": 0.4
+        },
+        {
+            "dimension": "Agility",
+            "raw_value": 17.5,
+            "normalized_value": 68.30306580593272,
+            "z_score": 0.47619047619047616,
+            "centile": 68.30306580593272,
+            "confidence": 88.0,
+            "source": "Illinois Agility Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 800,
+            "mean": 18.5,
+            "std_dev": 2.1
+        },
+        {
+            "dimension": "Reaction",
+            "raw_value": 230.0,
+            "normalized_value": 69.1462461274013,
+            "z_score": 0.5,
+            "centile": 69.1462461274013,
+            "confidence": 90.0,
+            "source": "Reaction Time Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 500,
+            "mean": 250.0,
+            "std_dev": 40.0
+        },
+        {
+            "dimension": "Balance",
+            "raw_value": 35.0,
+            "normalized_value": 73.40144709512995,
+            "z_score": 0.625,
+            "centile": 73.40144709512995,
+            "confidence": 85.0,
+            "source": "Stork Stand Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 500,
+            "mean": 30.0,
+            "std_dev": 8.0
+        },
+        {
+            "dimension": "Endurance",
+            "raw_value": 40.0,
+            "normalized_value": 74.75074624530771,
+            "z_score": 0.6666666666666666,
+            "centile": 74.75074624530771,
+            "confidence": 98.0,
+            "source": "Pushup Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 1000,
+            "mean": 30.0,
+            "std_dev": 15.0
+        },
+        {
+            "dimension": "Movement Quality",
+            "raw_value": 18.0,
+            "normalized_value": 84.13447460685428,
+            "z_score": 1.0,
+            "centile": 84.13447460685428,
+            "confidence": 90.0,
+            "source": "FMS Prototype",
+            "population": "European Youth (15-18M)",
+            "sample_size": 600,
+            "mean": 15.0,
+            "std_dev": 3.0
+        }
+    ],
+    "repeatability": {
+        "num_trials": 10,
+        "mean_diff_cm": 2.7501838260153884,
+        "std_dev_cm": 1.600545564846923,
+        "cv_percent": 3.182943538775111,
+        "icc_approx": 0.9825210454076249
+    }
+}

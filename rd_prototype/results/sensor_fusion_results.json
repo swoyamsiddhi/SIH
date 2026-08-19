@@ -1,0 +1,74 @@
+[
+    {
+        "scenario": "Ideal",
+        "cam_rmse": 0.003943221662853183,
+        "imu_rmse": 1.156380367641746,
+        "fus_rmse": 0.6317004205503924,
+        "cam_peak_err": 0.00289440627922799,
+        "imu_peak_err": 2.137053262782724,
+        "fus_peak_err": 0.005816203539769305
+    },
+    {
+        "scenario": "Camera Noise",
+        "cam_rmse": 0.015975649867704122,
+        "imu_rmse": 1.1579039499597112,
+        "fus_rmse": 0.631333819105325,
+        "cam_peak_err": 0.025468075901455833,
+        "imu_peak_err": 2.1410276741564758,
+        "fus_peak_err": 0.004949707635406253
+    },
+    {
+        "scenario": "Camera Occlusion",
+        "cam_rmse": 0.03679375784287161,
+        "imu_rmse": 1.1550521806617375,
+        "fus_rmse": 0.7295326725102609,
+        "cam_peak_err": 0.0687219944881231,
+        "imu_peak_err": 2.134437617104663,
+        "fus_peak_err": 0.008402426744689717
+    },
+    {
+        "scenario": "IMU Noise",
+        "cam_rmse": 0.00390743175308549,
+        "imu_rmse": 1.130418759148939,
+        "fus_rmse": 0.6339301907391218,
+        "cam_peak_err": 0.009424626434302641,
+        "imu_peak_err": 2.0794508773999487,
+        "fus_peak_err": 0.02367510401274886
+    },
+    {
+        "scenario": "IMU Drift",
+        "cam_rmse": 0.003767877866509172,
+        "imu_rmse": 1.1318455210121883,
+        "fus_rmse": 0.5558218148210348,
+        "cam_peak_err": 0.0018369493821787097,
+        "imu_peak_err": 2.1012466645287917,
+        "fus_peak_err": 0.13320683775227138
+    },
+    {
+        "scenario": "Combined Noise",
+        "cam_rmse": 0.01814527547123117,
+        "imu_rmse": 1.150773227062661,
+        "fus_rmse": 0.6187380504936633,
+        "cam_peak_err": 0.0010297206867569964,
+        "imu_peak_err": 2.1220892244567318,
+        "fus_peak_err": 0.08739768337723886
+    },
+    {
+        "scenario": "Severe Dropout",
+        "cam_rmse": 0.03726594946380948,
+        "imu_rmse": 1.1524890795795681,
+        "fus_rmse": 0.721220819656667,
+        "cam_peak_err": 0.07091415229837472,
+        "imu_peak_err": 2.1332804033491493,
+        "fus_peak_err": 0.02813603084103855
+    },
+    {
+        "scenario": "Sync Error (Simulated via high noise)",
+        "cam_rmse": 0.026282722704849694,
+        "imu_rmse": 1.1682740876233522,
+        "fus_rmse": 0.644060172770679,
+        "cam_peak_err": 0.04597226934415022,
+        "imu_peak_err": 2.159157571761173,
+        "fus_peak_err": 0.005632567312448433
+    }
+]

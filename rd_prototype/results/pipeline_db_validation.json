@@ -1,0 +1,7 @@
+{
+    "status": "NOT EXECUTED - DATABASE UNAVAILABLE",
+    "tests_passed": 0,
+    "tests_total": 0,
+    "details": {},
+    "error": "Expected PostgreSQL, but found sqlite. SQLite is not permitted for this test."
+}

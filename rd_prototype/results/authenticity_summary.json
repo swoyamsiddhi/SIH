@@ -1,0 +1,51 @@
+{
+    "results": [
+        {
+            "scenario": "Genuine attempt",
+            "mean_innovation": 0.06609434932277637,
+            "max_innovation": 1.4119467593115809,
+            "confidence_score": 33.90565067722363,
+            "flagged_as_manipulated": true,
+            "ground_truth_manipulated": false
+        },
+        {
+            "scenario": "Video timing manipulation",
+            "mean_innovation": 0.06586018534900565,
+            "max_innovation": 1.42147857854252,
+            "confidence_score": 34.13981465099435,
+            "flagged_as_manipulated": true,
+            "ground_truth_manipulated": true
+        },
+        {
+            "scenario": "Artificially extended hang time",
+            "mean_innovation": 0.06620869489936655,
+            "max_innovation": 1.43019988744539,
+            "confidence_score": 33.79130510063345,
+            "flagged_as_manipulated": true,
+            "ground_truth_manipulated": true
+        },
+        {
+            "scenario": "Altered visual trajectory",
+            "mean_innovation": 0.0688593269153127,
+            "max_innovation": 1.4200677560051922,
+            "confidence_score": 31.140673084687307,
+            "flagged_as_manipulated": true,
+            "ground_truth_manipulated": true
+        },
+        {
+            "scenario": "IMU/video disagreement",
+            "mean_innovation": 0.08349912335831515,
+            "max_innovation": 1.3460188014226473,
+            "confidence_score": 16.500876641684854,
+            "flagged_as_manipulated": true,
+            "ground_truth_manipulated": true
+        }
+    ],
+    "metrics": {
+        "Precision": 0.8,
+        "Recall": 1.0,
+        "F1_Score": 0.888888888888889,
+        "False_Positives": 1,
+        "False_Negatives": 0
+    }
+}

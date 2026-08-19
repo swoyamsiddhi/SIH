@@ -1,0 +1,29 @@
+{
+    "sport_matching": [
+        {
+            "sport": "Sprinting",
+            "compatibility_score": 97.33333333333334,
+            "confidence": 90.0,
+            "explanation": "Explosive Power: Strong (z=1.8 vs req 1.0) - [Prototype Assumption] High correlation between CMJ peak power and 10m/20m acceleration phase (Sleivert & Taing, 2004) | Speed: Gap (z=1.2 vs req 1.5) - [Prototype Assumption] Direct maximal velocity requirement | Reaction: Strong (z=0.8 vs req 0.5) - [Prototype Assumption] Start reaction time"
+        },
+        {
+            "sport": "Basketball",
+            "compatibility_score": 96.96428571428571,
+            "confidence": 88.0,
+            "explanation": "Explosive Power: Strong (z=1.8 vs req 1.5) - [Prototype Assumption] Vertical jump crucial for rebounding and shooting | Agility: Gap (z=0.9 vs req 1.0) - [Prototype Assumption] Lateral movement for defense | Endurance: Gap (z=0.1 vs req 0.5) - [Prototype Assumption] Repeated sprints"
+        },
+        {
+            "sport": "Football",
+            "compatibility_score": 88.42857142857143,
+            "confidence": 88.0,
+            "explanation": "Movement Quality: Gap (z=0.2 vs req 0.5) - [Prototype Assumption] High biomechanical efficiency required for repetitive high-intensity COD actions (Gabbett, 2010) | Endurance: Gap (z=0.1 vs req 1.0) - [Prototype Assumption] 9-12km total distance covered per match requiring high Yo-Yo IR1 test scores (Krustrup et al., 2003) | Agility: Strong (z=0.9 vs req 0.8) - [Prototype Assumption] Change of direction speed | Explosive Power: Strong (z=1.8 vs req 0.5) - [Prototype Assumption] Aerial duels and short sprints (Stolen et al., 2005)"
+        }
+    ],
+    "growth": {
+        "start_val": 40.0,
+        "end_val": 45.0,
+        "abs_improvement": 5.0,
+        "pct_improvement": 12.5,
+        "trajectory": "improving"
+    }
+}
